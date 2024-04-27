@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="show">
+    <h1>Show Data</h1>
+    <input type="text" name="" id="showData" placeholder="Enter your Name">
+    <button class="showD">Show Data</button>
+
+     <h1 class="yourD">Your Data:</h1>
+
+    </div>
+
+
+<script >
+    
+
+let showData = document.querySelector(".showD");
+showData.addEventListener("click",()=>{
+    let data = localStorage.getItem("data")
+let sd= JSON.parse(data)
+    let inp = document.querySelector("#showData")
+
+    if(sd.fullName == inp.value){
+
+        document.querySelector(".yourD").style.display= "block"
+
+      let p1 =   document.createElement("p")
+      let p1Text = document.createTextNode("Name: "+ sd.fullName)
+      p1.appendChild(p1Text)
+      document.querySelector(".show").appendChild(p1)
+
+      let p2 =   document.createElement("p")
+      let p2Text = document.createTextNode("Roll Number: "+ sd.rollNum)
+      p2.appendChild(p2Text)
+      document.querySelector(".show").appendChild(p2)
+
+      let p3 =   document.createElement("p")
+      let p3Text = document.createTextNode("College: "+ sd.college)
+      p3.appendChild(p3Text)
+      document.querySelector(".show").appendChild(p3)
+
+      let p4 =   document.createElement("p")
+      let p4Text = document.createTextNode("Password: "+ sd.password)
+      p4.appendChild(p4Text)
+      document.querySelector(".show").appendChild(p4)
+    }else{
+        alert("Please write a valid Name")
+    }
+
+
+})
+</script>
+
+</body>
+</html>

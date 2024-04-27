@@ -1,0 +1,79 @@
+.body{
+    background-color: black;
+}
+
+.container{
+    margin: auto;
+    background-color: white;
+    margin-top: 40px;
+    width: 30%;
+    height: 530px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+form{
+/* background-color: bisque; */
+    /* height: 80%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: start; */
+    
+}
+input{
+
+    height: 35px;
+    width: 97%;
+    padding-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 10PX;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 0.1px solid rgba(0, 0, 0, 0.425);
+}
+.submit{
+    width: 100px;
+    height: 43px;
+    background-color: rgb(0, 102, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.mode{
+    width: 200px;
+    height: 40px;
+    background-color: #0EA9F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    float: right;
+}
+
+.showD{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(93, 236, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.show{
+    margin: auto;
+    width: 90%;
+}
+
+.yourD{
+    display: none;
+}
+
+p{
+    font-size: 1.2em;
+    font-weight: bold;
+}
